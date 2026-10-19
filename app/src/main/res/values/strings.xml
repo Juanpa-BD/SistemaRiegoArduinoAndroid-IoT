@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="siguiente_sensores">Siguiente (Sensores) →</string>
+    <string name="volver_login">← Volver (Login)</string>
+    <string name="actuadores_utilizados_n_bomba_de_agua_rel_n_m_dulo_bluetooth_hc_05">Actuadores Utilizados:\n• Bomba de Agua / Relé\n• Módulo Bluetooth HC-05</string>
+    <string name="sensores_utilizados_n_dht11_temperatura_y_humedad_n_fc_28_humedad_de_suelo">Sensores Utilizados:\n• DHT11 (Temperatura y Humedad)\n• FC-28 (Humedad de Suelo)</string>
+    <string name="descripci_n_del_proyecto">Descripción del Proyecto</string>
+    <string name="sistema_de_riego_iot">Sistema de Riego IoT</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="ingresar_al_sistema">Ingresar al Sistema</string>
+    <string name="control">Control →</string>
+    <string name="volver">← Volver</string>
+    <string name="humedad_suelo_seco_45">Humedad Suelo: Seco (45%)</string>
+    <string name="humedad_aire_60">Humedad Aire: 60 %</string>
+    <string name="temperatura_24_c">Temperatura: 24 °C</string>
+    <string name="monitoreo_de_sensores">Monitoreo de Sensores</string>
+    <string name="volver_a_sensores">← Volver a Sensores</string>
+    <string name="apagar_bomba_comando_0">Apagar Bomba (Comando 0)</string>
+    <string name="encender_bomba_comando_1">Encender Bomba (Comando 1)</string>
+    <string name="control_de_actuadores_bluetooth">Control de Actuadores (Bluetooth)</string>
+    <string name="ingresar_al_sistema1">Ingresar al Sistema</string>
+    <string name="contrase_a1">Contraseña</string>
+    <string name="usuario1">Usuario</string>
+    <string name="sistema_de_riego_iot1">Sistema de Riego IoT</string>
+    <string name="ingresar_al_sistema2">Ingresar al Sistema</string>
+    <string name="contrase_a2">Contraseña</string>
+    <string name="usuario3">Usuario</string>
+    <string name="sistema_de_riego_iot3">Sistema de Riego IoT</string>
+</resources>
