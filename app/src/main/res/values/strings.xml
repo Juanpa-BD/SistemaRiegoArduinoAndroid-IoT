@@ -27,4 +27,24 @@
     <string name="contrase_a2">Contraseña</string>
     <string name="usuario3">Usuario</string>
     <string name="sistema_de_riego_iot3">Sistema de Riego IoT</string>
+    <string name="sistema_de_riego_iot4">Sistema de Riego IoT</string>
+    <string name="monitoreo_y_control_con_arduino_bluetooth4">Monitoreo y Control con Arduino / Bluetooth</string>
+    <string name="ir_al_login4">Ir al Login</string>
+    <string name="control4">Control →</string>
+    <string name="volver4">← Volver</string>
+    <string name="conectar_con_hc_05">Conectar con HC-05</string>
+    <string name="temp_c_hum">Temp: -- °C | Hum: -- %</string>
+    <string name="estado_desconectado">Estado: Desconectado</string>
+    <string name="monitoreo_de_sensores4">Monitoreo de Sensores</string>
+    <string name="actuadores_utilizados_n_bomba_de_agua_rel_n_m_dulo_bluetooth_hc_054">Actuadores Utilizados:\n• Bomba de Agua / Relé\n• Módulo Bluetooth HC-05</string>
+    <string name="sensores_utilizados_n_dht11_temperatura_y_humedad_n_fc_28_humedad_de_suelo4">Sensores Utilizados:\n• DHT11 (Temperatura y Humedad)\n• FC-28 (Humedad de Suelo)</string>
+    <string name="descripci_n_del_proyecto4">Descripción del Proyecto</string>
+    <string name="volver_login4">← Volver (Login)</string>
+    <string name="siguiente_sensores4">Siguiente (Sensores) →</string>
+    <string name="encender_bomba_comando_14">Encender Bomba (Comando 1)</string>
+    <string name="apagar_bomba_comando_04">Apagar Bomba (Comando 0)</string>
+    <string name="inicio_splash">← Inicio (Splash)</string>
+    <string name="sensores">← Sensores</string>
+    <string name="control_de_actuadores_bluetooth4">Control de Actuadores (Bluetooth)</string>
+    <string name="sensor_dht11">Sensor DHT11</string>
 </resources>

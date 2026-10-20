@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0F172A"
     android:orientation="vertical"
     android:padding="32dp"
     android:gravity="center">
@@ -13,6 +14,7 @@
         android:text="@string/sistema_de_riego_iot"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="#F8FAFC"
         android:layout_marginBottom="32dp" />
 
     <EditText
@@ -22,6 +24,8 @@
         android:minHeight="48dp"
         android:hint="@string/usuario"
         android:inputType="text"
+        android:textColor="#F8FAFC"
+        android:textColorHint="#94A3B8"
         android:importantForAutofill="no"
         android:layout_marginBottom="16dp" />
 
@@ -32,6 +36,8 @@
         android:minHeight="48dp"
         android:hint="@string/contrase_a"
         android:inputType="textPassword"
+        android:textColor="#F8FAFC"
+        android:textColorHint="#94A3B8"
         android:importantForAutofill="no"
         android:layout_marginBottom="24dp" />
 
@@ -40,6 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="48dp"
+        android:backgroundTint="#38BDF8"
         android:text="@string/ingresar_al_sistema" />
 
 </LinearLayout>
