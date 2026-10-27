@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvTituloControl"
+        android:layout_width="326dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/control_de_actuadores_bluetooth"
+        android:textColor="#F8FAFC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnEvento1"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#38BDF8"
+        android:minHeight="48dp"
+        android:text="@string/encender_bomba_comando_1" />
+
+    <Button
+        android:id="@+id/btnEvento2"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#38BDF8"
+        android:minHeight="48dp"
+        android:text="@string/apagar_bomba_comando_0" />
+
+    <View
+        android:layout_width="338dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Fila de botones para volver -->
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnVolverSensors"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="181dp"
+            android:layout_height="78dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#38BDF8"
+            android:minHeight="48dp"
+            android:text="@string/sensores" />
+
+        <Button
+            android:id="@+id/btnVolverLogin"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="172dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#38BDF8"
+            android:minHeight="48dp"
+            android:text="@string/inicio_splash" />
+    </LinearLayout>
+
+</LinearLayout>

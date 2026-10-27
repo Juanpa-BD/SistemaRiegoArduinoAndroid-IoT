@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Título del Proyecto -->
+    <TextView
+        android:id="@+id/tvTituloDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripci_n_del_proyecto"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#F8FAFC"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Lista de Sensores -->
+
+    <!-- Lista de Actuadores -->
+    <TextView
+        android:id="@+id/tvListaSensores"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/sensores_utilizados_n_dht11_temperatura_y_humedad_n_fc_28_humedad_de_suelo"
+        android:textColor="#F8FAFC"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvListaActuadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/actuadores_utilizados_n_bomba_de_agua_rel_n_m_dulo_bluetooth_hc_05"
+        android:textSize="16sp"
+        android:textColor="#F8FAFC"
+        android:layout_marginBottom="32dp" />
+
+    <ImageView
+        android:id="@+id/ivSensorDht11"
+        android:layout_width="339dp"
+        android:layout_height="162dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/sensor_dht11"
+        android:src="@drawable/sensor_dht11" />
+    <!-- Espaciador flexible para empujar los botones hacia abajo -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:text="esta apliccion msirve para controlar un sistema de riego mediante una aplicaion movil utilizando un sensor DHT11 para la lectura de temperatura y humedad en un ammbiente controlado."
+        android:textColor="#F8FAFC"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBackToLogin"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#38BDF8"
+            android:minHeight="48dp"
+            android:text="@string/volver_login" />
+
+        <Button
+            android:id="@+id/btnNextToSensors"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#38BDF8"
+            android:minHeight="48dp"
+            android:text="@string/siguiente_sensores" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Botones de navegación inferior -->
+
+</LinearLayout>

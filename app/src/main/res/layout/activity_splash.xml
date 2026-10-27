@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center">
+
+    <!-- Título / Bienvenida -->
+    <TextView
+        android:id="@+id/tvTituloSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sistema_de_riego_iot"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#F8FAFC"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvSubtituloSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monitoreo_y_control_con_arduino_bluetooth4"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#F8FAFC"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Botón con el ID que busca SplashActivity.kt -->
+    <Button
+        android:id="@+id/btnNextToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#38BDF8"
+        android:minHeight="48dp"
+        android:text="@string/ir_al_login4" />
+
+</LinearLayout>
