@@ -1,63 +1,69 @@
-Sistema de Monitoreo y Control de Riego Automatizado (IoT)
+# Sistema de Monitoreo y Control de Riego Automatizado (IoT)
 
-📌 Descripción del Proyecto
+![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
-El Sistema de Monitoreo y Control de Riego Automatizado es una solución IoT desarrollada para la asignatura Aplicaciones Móviles para IoT (INACAP - TI3042). El proyecto integra un microcontrolador Arduino con una aplicación móvil nativa en Android, permitiendo la supervisión en tiempo real de variables ambientales (temperatura y humedad) y el control inalámbrico bidireccional de los actuadores de riego vía Bluetooth.
+## 📌 Descripción del Proyecto
 
-⚙️ Arquitectura del Sistema
+El **Sistema de Monitoreo y Control de Riego Automatizado** es una solución IoT desarrollada para la asignatura *Aplicaciones Móviles para IoT* (INACAP). El proyecto integra un microcontrolador Arduino con una aplicación móvil nativa en Android, permitiendo la supervisión en tiempo real de variables ambientales y el control inalámbrico bidireccional de los actuadores de riego vía Bluetooth.
+
+## ⚙️ Arquitectura del Sistema
 
 El sistema consta de dos bloques principales interconectados mediante comunicación serial inalámbrica:
 
-┌──────────────────────────┐         Bluetooth         ┌──────────────────────────┐
+┌──────────────────────────┐          Bluetooth         ┌──────────────────────────┐
 │    Aplicación Android    │ ◄──────────────────────► │   Microcontrolador IoT   │
-│ (Interfaz UI + Control)  │     (Módulo HC-05)       │  (Arduino + Sensores)    │
-└──────────────────────────┘                           └──────────────────────────┘
+│ (Interfaz UI + Control)  │      (Módulo HC-05)      │  (Arduino + Sensores)    │
+└──────────────────────────┘                          └──────────────────────────┘
 
 
-Cliente Móvil (Android): Interfaz gráfica intuitiva que gestiona el acceso de usuarios, la recepción de telemetría de los sensores y el envío de instrucciones de encendido/apagado al sistema de riego.
+* **Cliente Móvil (Android):** Interfaz gráfica intuitiva que gestiona el acceso de usuarios, la recepción de telemetría de los sensores y el envío de instrucciones al sistema de riego.
+* **Nodo Embebido (Arduino):** Encargado del muestreo de datos de sensores, procesamiento local y ejecución de comandos sobre la bomba de riego mediante relés.
 
-Nodo Embebido (Arduino): Encargado del muestreo de datos de sensores, procesamiento local y ejecución de comandos sobre la bomba/válvula de riego mediante relés.
+## 🛠️ Tecnologías y Componentes
 
-🛠️ Tecnologías y Componentes
+### **Hardware**
 
-Hardware
+* **Microcontrolador:** Placa compatible con Arduino (Uno / Mega / Nano).
+* **Módulo de Comunicación:** Bluetooth HC-05 (UART Serial).
+* **Sensores:**
+* Sensor de temperatura y humedad ambiente (DHT11 / DHT22).
+* Sensor de humedad de suelo.
 
-Microcontrolador: Placa compatible con Arduino (Uno / Mega / Nano).
+* **Actuadores:** Módulo de relé de 5V y motobomba de agua.
 
-Módulo de Comunicación: Bluetooth HC-05 (UART Serial).
+### **Software y Entornos**
 
-Sensores:
+* **Lógica Móvil:** Android Studio (Kotlin).
+* **Interfaz de Usuario:** XML con diseño responsivo.
+* **Firmware Embebido:** Arduino IDE (C/C++).
+* **Protocolo:** Comunicación Serial Bluetooth SPP.
 
-Sensor de temperatura y humedad ambiente (DHT11 / DHT22).
+## 📱 Funcionalidades Clave
 
-Sensor de humedad de suelo (Higrómetro capacitivo/resistivo).
+* **🔐 Módulo de Autenticación:** Pantalla de inicio de sesión y registro.
+* **📊 Telemetría en Tiempo Real:** Visualización continua de lecturas de los sensores.
+* **🎮 Control Remoto:** Panel para la activación manual o automatizada del riego.
+* **🔗 Gestión de Conexión:** Emparejamiento e intercambio de datos con el HC-05.
 
-Actuadores: Módulo de relé de 5V y motobomba de agua / electroválvula.
+## 🚀 Guía de Instalación y Despliegue
 
-Software y Entornos
+### 1. Configuración del Hardware y Firmware
 
-Lógica Móvil: Android Studio (Kotlin, Arquitectura MVC/MVVM).
+1. Abre el archivo `.ino` en el **Arduino IDE**.
+2. Conecta la placa Arduino y verifica las conexiones de los pines (HC-05, sensores y relé).
+3. Sube el programa a la placa.
 
-Interfaz de Usuario: XML con diseño responsivo.
+### 2. Despliegue de la Aplicación Móvil
 
-Firmware Embebido: Arduino IDE (C/C++).
+1. Genera el APK desde Android Studio: `Build > Build Bundle(s) / APK(s) > Build APK(s)`.
+2. Localiza el archivo en `app/build/outputs/apk/debug/app-debug.apk`.
+3. Instálalo en tu dispositivo Android y concédele los permisos de Bluetooth.
 
-Protocolo de Comunicación: Comunicación Serial mediante tecnología Bluetooth SPP (Serial Port Profile).
 
-📱 Funcionalidades Clave de la Aplicación
+## 👥 Equipo de Desarrollo
 
-🔐 Módulo de Autenticación: Pantalla de Login segura y vista de Registro de Usuarios.
-
-📊 Telemetría en Tiempo Real: Visualización continua de lecturas recibidas desde el módulo de sensores.
-
-🎮 Control Remoto: Panel de actuadores para la activación y desactivación manual o automatizada del flujo de riego.
-
-🔗 Gestión de Conexión: Emparejamiento e intercambio bidireccional de datos con el dispositivo Bluetooth HC-05.
-
-🚀 Guía de Instalación y Despliegue
-
-1. Configuración del Hardware y Firmware
-
-Abre el archivo de firmware .ino en el Arduino IDE.
-
-Conecta la placa Arduino a la
+* **Institución:** INACAP.
+* **Asignatura:** TI3042 - Aplicaciones Móviles para IoT.
