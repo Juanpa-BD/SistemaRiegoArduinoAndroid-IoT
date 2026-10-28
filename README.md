@@ -7,7 +7,9 @@
 
 ## 📌 Descripción del Proyecto
 
-El **Sistema de Monitoreo y Control de Riego Automatizado** es una solución IoT desarrollada para la asignatura *Aplicaciones Móviles para IoT* (INACAP). El proyecto integra un microcontrolador Arduino con una aplicación móvil nativa en Android, permitiendo la supervisión en tiempo real de variables ambientales y el control inalámbrico bidireccional de los actuadores de riego vía Bluetooth.
+El **Sistema de Monitoreo y Control de Riego Automatizado** es una solución IoT desarrollada para la asignatura *Aplicaciones Móviles para IoT* (INACAP). 
+El proyecto integra un microcontrolador Arduino con una aplicación móvil nativa en Android, permitiendo la supervisión en tiempo real de variables ambientales 
+y el control inalámbrico bidireccional de los actuadores de riego vía Bluetooth.
 
 ## ⚙️ Arquitectura del Sistema
 
